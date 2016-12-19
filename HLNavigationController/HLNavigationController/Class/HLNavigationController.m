@@ -102,7 +102,7 @@ static NSValue *hl_tabBarRectValue;
         self.tabBarController.tabBar.frame = hl_tabBarRectValue.CGRectValue;
     }
 }
-- (BOOL)jt_fullScreenPopGestureEnabled
+- (BOOL)hl_fullScreenPopGestureEnabled
 {
     return [self rootViewController].hl_fullScreenPopGestureEnabled;
 }
@@ -199,7 +199,6 @@ static NSValue *hl_tabBarRectValue;
     }
     
 }
-//修复有水平方向滚动的ScrollView时边缘返回手势失效的问题
 -(BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer
 {
     return YES;
