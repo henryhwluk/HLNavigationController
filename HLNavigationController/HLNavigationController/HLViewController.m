@@ -9,6 +9,7 @@
 #import "HLViewController.h"
 #import "HLNavigationController.h"
 #import "UIViewController+HLNavigationExtension.h"
+#import "UIColor+RandomColor.h"
 @interface HLViewController ()
 
 @end
@@ -18,8 +19,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"Title";
-    self.navigationController.navigationBar.barTintColor = [UIColor blackColor];
-    self.view.backgroundColor = [UIColor blueColor];
+    self.navigationController.navigationBar.barTintColor = [UIColor randomColor];
+    self.view.backgroundColor = [UIColor randomColor];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Next" style:UIBarButtonItemStylePlain target:self action:@selector(didTapNextButton)];
     
     self.hl_fullScreenPopGestureEnabled = NO; //关闭当前控制器的全屏返回手势

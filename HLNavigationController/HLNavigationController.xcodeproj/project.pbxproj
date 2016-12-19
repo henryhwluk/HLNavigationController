@@ -10,6 +10,9 @@
 		B829668F1E080C0C00D558AC /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B829668E1E080C0C00D558AC /* MainViewController.m */; };
 		B82966931E080C4D00D558AC /* HLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B82966911E080C4D00D558AC /* HLViewController.m */; };
 		B82966941E080C4D00D558AC /* HLViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B82966921E080C4D00D558AC /* HLViewController.xib */; };
+		B82966981E080F2500D558AC /* UIColor+RandomColor.m in Sources */ = {isa = PBXBuildFile; fileRef = B82966971E080F2500D558AC /* UIColor+RandomColor.m */; };
+		B829669B1E080FBE00D558AC /* backImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B82966991E080FBE00D558AC /* backImage@2x.png */; };
+		B829669C1E080FBE00D558AC /* backImage@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B829669A1E080FBE00D558AC /* backImage@3x.png */; };
 		B88A33FB1E07A76B00741B0D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B88A33FA1E07A76B00741B0D /* main.m */; };
 		B88A33FE1E07A76B00741B0D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B88A33FD1E07A76B00741B0D /* AppDelegate.m */; };
 		B88A34011E07A76B00741B0D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B88A34001E07A76B00741B0D /* ViewController.m */; };
@@ -26,6 +29,10 @@
 		B82966901E080C4D00D558AC /* HLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLViewController.h; sourceTree = "<group>"; };
 		B82966911E080C4D00D558AC /* HLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLViewController.m; sourceTree = "<group>"; };
 		B82966921E080C4D00D558AC /* HLViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HLViewController.xib; sourceTree = "<group>"; };
+		B82966961E080F2500D558AC /* UIColor+RandomColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+RandomColor.h"; sourceTree = "<group>"; };
+		B82966971E080F2500D558AC /* UIColor+RandomColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+RandomColor.m"; sourceTree = "<group>"; };
+		B82966991E080FBE00D558AC /* backImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backImage@2x.png"; sourceTree = "<group>"; };
+		B829669A1E080FBE00D558AC /* backImage@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backImage@3x.png"; sourceTree = "<group>"; };
 		B88A33F61E07A76B00741B0D /* HLNavigationController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HLNavigationController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B88A33FA1E07A76B00741B0D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B88A33FC1E07A76B00741B0D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -53,6 +60,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B82966951E080EEA00D558AC /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				B82966961E080F2500D558AC /* UIColor+RandomColor.h */,
+				B82966971E080F2500D558AC /* UIColor+RandomColor.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		B88A33ED1E07A76A00741B0D = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +88,7 @@
 		B88A33F81E07A76B00741B0D /* HLNavigationController */ = {
 			isa = PBXGroup;
 			children = (
+				B82966951E080EEA00D558AC /* Category */,
 				B88A34101E07A9B500741B0D /* Class */,
 				B88A33FC1E07A76B00741B0D /* AppDelegate.h */,
 				B88A33FD1E07A76B00741B0D /* AppDelegate.m */,
@@ -102,6 +119,8 @@
 		B88A34101E07A9B500741B0D /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				B82966991E080FBE00D558AC /* backImage@2x.png */,
+				B829669A1E080FBE00D558AC /* backImage@3x.png */,
 				B88A34111E07A9D400741B0D /* HLNavigationController.h */,
 				B88A34121E07A9D400741B0D /* HLNavigationController.m */,
 				B88A34171E07ACD100741B0D /* UIViewController+HLNavigationExtension.h */,
@@ -169,8 +188,10 @@
 			files = (
 				B82966941E080C4D00D558AC /* HLViewController.xib in Resources */,
 				B88A34091E07A76B00741B0D /* LaunchScreen.storyboard in Resources */,
+				B829669C1E080FBE00D558AC /* backImage@3x.png in Resources */,
 				B88A34061E07A76B00741B0D /* Assets.xcassets in Resources */,
 				B88A34041E07A76B00741B0D /* Main.storyboard in Resources */,
+				B829669B1E080FBE00D558AC /* backImage@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,6 +202,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B82966981E080F2500D558AC /* UIColor+RandomColor.m in Sources */,
 				B88A34011E07A76B00741B0D /* ViewController.m in Sources */,
 				B82966931E080C4D00D558AC /* HLViewController.m in Sources */,
 				B829668F1E080C0C00D558AC /* MainViewController.m in Sources */,
