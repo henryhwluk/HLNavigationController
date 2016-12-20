@@ -11,26 +11,25 @@
 #import "UIViewController+HLNavigationExtension.h"
 #import "UIColor+RandomColor.h"
 @interface HLViewController ()
+@property (weak, nonatomic) IBOutlet UITableView *myTabView;
 
 @end
 
 @implementation HLViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     self.title = @"Title";
     self.navigationController.navigationBar.barTintColor = [UIColor randomColor];
     self.view.backgroundColor = [UIColor randomColor];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Next" style:UIBarButtonItemStylePlain target:self action:@selector(didTapNextButton)];
     
-    self.hl_fullScreenPopGestureEnabled = NO; //关闭当前控制器的全屏返回手势
-   
 }
+
 - (void)didTapNextButton
 {
     HLViewController *viewController = [[HLViewController alloc] init];
-//    testViewController *viewController = [[testViewController alloc] init];
-    
     viewController.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:viewController animated:YES];
 }
@@ -39,6 +38,18 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)didTapPopButton:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+- (IBAction)didTapPopToButton:(id)sender {
+    [self.navigationController popToViewController:self.hl_navigationController.hl_viewControllers[0] animated:YES];
+}
+
+- (IBAction)didTapPopToRootButton:(id)sender {
+    [self.navigationController popToRootViewControllerAnimated:YES];
+    
+}
 /*
 #pragma mark - Navigation
 

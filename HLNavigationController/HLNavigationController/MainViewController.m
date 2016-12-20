@@ -10,6 +10,8 @@
 #import "HLNavigationController.h"
 #import "UIViewController+HLNavigationExtension.h"
 #import "HLViewController.h"
+#import "HLTableViewController.h"
+
 @interface MainViewController ()
 
 @end
@@ -26,14 +28,12 @@
     firstNav.navigationBar.barTintColor = [UIColor blueColor];
     firstNav.fullScreenPopGestureEnabled = YES;
     
-    HLViewController *secondVC = [[HLViewController alloc] init];
-    UITabBarItem *secondItem = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemTopRated tag:2];
+    HLTableViewController *secondVC = [[HLTableViewController alloc] init];
+    UITabBarItem *secondItem = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemFavorites tag:2];
     secondVC.title = @"Second";
     secondVC.tabBarItem = secondItem;
     HLNavigationController *secondNav = [[HLNavigationController alloc] initWithRootViewController:secondVC];
     secondNav.fullScreenPopGestureEnabled = NO;
-    
-    //    testViewController *te = [[testViewController alloc]init];
     
     self.viewControllers = @[firstNav,secondNav];
 }

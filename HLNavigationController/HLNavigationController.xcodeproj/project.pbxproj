@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B820F0E31E08E58500593E46 /* HLTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B820F0E21E08E58500593E46 /* HLTableViewController.m */; };
 		B829668F1E080C0C00D558AC /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B829668E1E080C0C00D558AC /* MainViewController.m */; };
 		B82966931E080C4D00D558AC /* HLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B82966911E080C4D00D558AC /* HLViewController.m */; };
 		B82966941E080C4D00D558AC /* HLViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B82966921E080C4D00D558AC /* HLViewController.xib */; };
@@ -24,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B820F0E11E08E58500593E46 /* HLTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLTableViewController.h; sourceTree = "<group>"; };
+		B820F0E21E08E58500593E46 /* HLTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLTableViewController.m; sourceTree = "<group>"; };
 		B829668D1E080C0C00D558AC /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		B829668E1E080C0C00D558AC /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		B82966901E080C4D00D558AC /* HLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLViewController.h; sourceTree = "<group>"; };
@@ -104,6 +107,8 @@
 				B82966901E080C4D00D558AC /* HLViewController.h */,
 				B82966911E080C4D00D558AC /* HLViewController.m */,
 				B82966921E080C4D00D558AC /* HLViewController.xib */,
+				B820F0E11E08E58500593E46 /* HLTableViewController.h */,
+				B820F0E21E08E58500593E46 /* HLTableViewController.m */,
 			);
 			path = HLNavigationController;
 			sourceTree = "<group>";
@@ -205,6 +210,7 @@
 				B82966981E080F2500D558AC /* UIColor+RandomColor.m in Sources */,
 				B88A34011E07A76B00741B0D /* ViewController.m in Sources */,
 				B82966931E080C4D00D558AC /* HLViewController.m in Sources */,
+				B820F0E31E08E58500593E46 /* HLTableViewController.m in Sources */,
 				B829668F1E080C0C00D558AC /* MainViewController.m in Sources */,
 				B88A33FE1E07A76B00741B0D /* AppDelegate.m in Sources */,
 				B88A33FB1E07A76B00741B0D /* main.m in Sources */,
