@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B820F0E31E08E58500593E46 /* HLTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B820F0E21E08E58500593E46 /* HLTableViewController.m */; };
+		B820F0EE1E09027B00593E46 /* HLContainerController.m in Sources */ = {isa = PBXBuildFile; fileRef = B820F0ED1E09027B00593E46 /* HLContainerController.m */; };
+		B820F0F11E090A4300593E46 /* HLTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B820F0F01E090A4300593E46 /* HLTableViewController.m */; };
+		B820F0F51E090D3700593E46 /* HLViewControllerX.m in Sources */ = {isa = PBXBuildFile; fileRef = B820F0F31E090D3700593E46 /* HLViewControllerX.m */; };
+		B820F0F61E090D3700593E46 /* HLViewControllerX.xib in Resources */ = {isa = PBXBuildFile; fileRef = B820F0F41E090D3700593E46 /* HLViewControllerX.xib */; };
+		B820F0F91E09120100593E46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B820F0F71E09120100593E46 /* Main.storyboard */; };
 		B829668F1E080C0C00D558AC /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B829668E1E080C0C00D558AC /* MainViewController.m */; };
 		B82966931E080C4D00D558AC /* HLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B82966911E080C4D00D558AC /* HLViewController.m */; };
 		B82966941E080C4D00D558AC /* HLViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B82966921E080C4D00D558AC /* HLViewController.xib */; };
@@ -17,7 +21,6 @@
 		B88A33FB1E07A76B00741B0D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B88A33FA1E07A76B00741B0D /* main.m */; };
 		B88A33FE1E07A76B00741B0D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B88A33FD1E07A76B00741B0D /* AppDelegate.m */; };
 		B88A34011E07A76B00741B0D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B88A34001E07A76B00741B0D /* ViewController.m */; };
-		B88A34041E07A76B00741B0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B88A34021E07A76B00741B0D /* Main.storyboard */; };
 		B88A34061E07A76B00741B0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B88A34051E07A76B00741B0D /* Assets.xcassets */; };
 		B88A34091E07A76B00741B0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B88A34071E07A76B00741B0D /* LaunchScreen.storyboard */; };
 		B88A34131E07A9D400741B0D /* HLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B88A34121E07A9D400741B0D /* HLNavigationController.m */; };
@@ -25,8 +28,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B820F0E11E08E58500593E46 /* HLTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLTableViewController.h; sourceTree = "<group>"; };
-		B820F0E21E08E58500593E46 /* HLTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLTableViewController.m; sourceTree = "<group>"; };
+		B820F0E61E09018700593E46 /* HLControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLControllerDelegate.h; sourceTree = "<group>"; };
+		B820F0EC1E09027B00593E46 /* HLContainerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLContainerController.h; sourceTree = "<group>"; };
+		B820F0ED1E09027B00593E46 /* HLContainerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLContainerController.m; sourceTree = "<group>"; };
+		B820F0EF1E090A4300593E46 /* HLTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLTableViewController.h; sourceTree = "<group>"; };
+		B820F0F01E090A4300593E46 /* HLTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLTableViewController.m; sourceTree = "<group>"; };
+		B820F0F21E090D3700593E46 /* HLViewControllerX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLViewControllerX.h; sourceTree = "<group>"; };
+		B820F0F31E090D3700593E46 /* HLViewControllerX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLViewControllerX.m; sourceTree = "<group>"; };
+		B820F0F41E090D3700593E46 /* HLViewControllerX.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HLViewControllerX.xib; sourceTree = "<group>"; };
+		B820F0F81E09120100593E46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B829668D1E080C0C00D558AC /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		B829668E1E080C0C00D558AC /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		B82966901E080C4D00D558AC /* HLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLViewController.h; sourceTree = "<group>"; };
@@ -42,7 +52,6 @@
 		B88A33FD1E07A76B00741B0D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B88A33FF1E07A76B00741B0D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		B88A34001E07A76B00741B0D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		B88A34031E07A76B00741B0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B88A34051E07A76B00741B0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B88A34081E07A76B00741B0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B88A340A1E07A76B00741B0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -97,18 +106,21 @@
 				B88A33FD1E07A76B00741B0D /* AppDelegate.m */,
 				B88A33FF1E07A76B00741B0D /* ViewController.h */,
 				B88A34001E07A76B00741B0D /* ViewController.m */,
-				B88A34021E07A76B00741B0D /* Main.storyboard */,
-				B88A34051E07A76B00741B0D /* Assets.xcassets */,
-				B88A34071E07A76B00741B0D /* LaunchScreen.storyboard */,
-				B88A340A1E07A76B00741B0D /* Info.plist */,
-				B88A33F91E07A76B00741B0D /* Supporting Files */,
+				B820F0EF1E090A4300593E46 /* HLTableViewController.h */,
+				B820F0F01E090A4300593E46 /* HLTableViewController.m */,
 				B829668D1E080C0C00D558AC /* MainViewController.h */,
 				B829668E1E080C0C00D558AC /* MainViewController.m */,
 				B82966901E080C4D00D558AC /* HLViewController.h */,
 				B82966911E080C4D00D558AC /* HLViewController.m */,
 				B82966921E080C4D00D558AC /* HLViewController.xib */,
-				B820F0E11E08E58500593E46 /* HLTableViewController.h */,
-				B820F0E21E08E58500593E46 /* HLTableViewController.m */,
+				B820F0F21E090D3700593E46 /* HLViewControllerX.h */,
+				B820F0F31E090D3700593E46 /* HLViewControllerX.m */,
+				B820F0F41E090D3700593E46 /* HLViewControllerX.xib */,
+				B820F0F71E09120100593E46 /* Main.storyboard */,
+				B88A34051E07A76B00741B0D /* Assets.xcassets */,
+				B88A34071E07A76B00741B0D /* LaunchScreen.storyboard */,
+				B88A340A1E07A76B00741B0D /* Info.plist */,
+				B88A33F91E07A76B00741B0D /* Supporting Files */,
 			);
 			path = HLNavigationController;
 			sourceTree = "<group>";
@@ -130,6 +142,9 @@
 				B88A34121E07A9D400741B0D /* HLNavigationController.m */,
 				B88A34171E07ACD100741B0D /* UIViewController+HLNavigationExtension.h */,
 				B88A34181E07ACD100741B0D /* UIViewController+HLNavigationExtension.m */,
+				B820F0E61E09018700593E46 /* HLControllerDelegate.h */,
+				B820F0EC1E09027B00593E46 /* HLContainerController.h */,
+				B820F0ED1E09027B00593E46 /* HLContainerController.m */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -191,11 +206,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B820F0F91E09120100593E46 /* Main.storyboard in Resources */,
 				B82966941E080C4D00D558AC /* HLViewController.xib in Resources */,
 				B88A34091E07A76B00741B0D /* LaunchScreen.storyboard in Resources */,
 				B829669C1E080FBE00D558AC /* backImage@3x.png in Resources */,
 				B88A34061E07A76B00741B0D /* Assets.xcassets in Resources */,
-				B88A34041E07A76B00741B0D /* Main.storyboard in Resources */,
+				B820F0F61E090D3700593E46 /* HLViewControllerX.xib in Resources */,
 				B829669B1E080FBE00D558AC /* backImage@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -210,8 +226,10 @@
 				B82966981E080F2500D558AC /* UIColor+RandomColor.m in Sources */,
 				B88A34011E07A76B00741B0D /* ViewController.m in Sources */,
 				B82966931E080C4D00D558AC /* HLViewController.m in Sources */,
-				B820F0E31E08E58500593E46 /* HLTableViewController.m in Sources */,
+				B820F0F11E090A4300593E46 /* HLTableViewController.m in Sources */,
+				B820F0EE1E09027B00593E46 /* HLContainerController.m in Sources */,
 				B829668F1E080C0C00D558AC /* MainViewController.m in Sources */,
+				B820F0F51E090D3700593E46 /* HLViewControllerX.m in Sources */,
 				B88A33FE1E07A76B00741B0D /* AppDelegate.m in Sources */,
 				B88A33FB1E07A76B00741B0D /* main.m in Sources */,
 				B88A34191E07ACD100741B0D /* UIViewController+HLNavigationExtension.m in Sources */,
@@ -222,10 +240,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B88A34021E07A76B00741B0D /* Main.storyboard */ = {
+		B820F0F71E09120100593E46 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B88A34031E07A76B00741B0D /* Base */,
+				B820F0F81E09120100593E46 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

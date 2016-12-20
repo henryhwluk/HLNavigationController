@@ -8,7 +8,8 @@
 
 #import "HLTableViewController.h"
 #import "UIColor+RandomColor.h"
-
+#import "HLContainerController.h"
+#import "HLViewControllerX.h"
 @interface HLTableViewController ()
 @property (nonatomic, strong) NSArray *datas;
 
@@ -16,15 +17,18 @@
 
 @implementation HLTableViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
     self.navigationController.navigationBar.barTintColor = [UIColor randomColor];
-
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    self.datas = [NSArray arrayWithObjects:@"HLAnimationTypeNone",@"HLAnimationTypeHorTranToLeft",@"HLAnimationTypeVerTranToUp",@"HLAnimationTypeCrossDissolve", nil];
+//    HLContainerController *co = [[HLContainerController alloc]initWithViewController:self withDelegate:self.controllerDelegate];
+//    [self.view addSubview:co.view];
+    HLContainerController *co = [[HLContainerController alloc]init];
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.controllerDelegate = co.controllerDelegate;
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -33,21 +37,45 @@
 }
 
 #pragma mark - Table view data source
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 4;
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return self.datas.count;
 }
 
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
-   
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
+    }
+    cell.textLabel.text = self.datas[indexPath.row];
     
     // Configure the cell...
     
     return cell;
 }
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+//    switch (indexPath.row) {
+//        case 0:
+//            
+//            break;
+//            
+//        default:
+//            break;
+//    }
 
+    if ([self.controllerDelegate respondsToSelector:@selector(viewController:willGotoNextController:withAnimation:)]) {
+        NSLog(@"qqqqqq");
+        HLViewControllerX *hv = [[HLViewControllerX alloc]init];
+        [self.controllerDelegate viewController:self willGotoNextController:hv withAnimation:HLAnimationTypeHorTranToLeft];
+    }
+   
+}
 
 /*
 // Override to support conditional editing of the table view.

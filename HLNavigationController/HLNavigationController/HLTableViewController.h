@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface HLTableViewController : UITableViewController
+#import "HLControllerDelegate.h"
+@interface HLTableViewController : UITableViewController<HLControllerDelegate>
+@property (nonatomic, assign) id<HLControllerDelegate> controllerDelegate;
 
 @end
+

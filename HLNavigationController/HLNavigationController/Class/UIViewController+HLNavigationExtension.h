@@ -8,10 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import "HLNavigationController.h"
+#import "HLControllerDelegate.h"
+
 @interface UIViewController (HLNavigationExtension)
 
 @property (nonatomic, assign) BOOL hl_fullScreenPopGestureEnabled;
 
 @property (nonatomic, weak) HLNavigationController *hl_navigationController;
+
+//@property (nonatomic, assign) id<HLControllerDelegate> controllerDelegate;
 
 @end
