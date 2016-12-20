@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "HLControllerDelegate.h"
 @interface HLViewControllerX : UIViewController
+@property (nonatomic, assign) id<HLControllerDelegate> controllerDelegate;
 
 @end

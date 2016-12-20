@@ -30,9 +30,7 @@
     firstNav.fullScreenPopGestureEnabled = YES;
     
     
-    HLTableViewController *secondVC = [[HLTableViewController alloc] init];
-    HLContainerController *co = [[HLContainerController alloc]init];
-    
+    HLContainerController *secondVC = [[HLContainerController alloc] init];    
     UITabBarItem *secondItem = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemFavorites tag:2];
     secondVC.title = @"Second";
     secondVC.tabBarItem = secondItem;

@@ -23,11 +23,6 @@
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
     self.navigationController.navigationBar.barTintColor = [UIColor randomColor];
     self.datas = [NSArray arrayWithObjects:@"HLAnimationTypeNone",@"HLAnimationTypeHorTranToLeft",@"HLAnimationTypeVerTranToUp",@"HLAnimationTypeCrossDissolve", nil];
-//    HLContainerController *co = [[HLContainerController alloc]initWithViewController:self withDelegate:self.controllerDelegate];
-//    [self.view addSubview:co.view];
-    HLContainerController *co = [[HLContainerController alloc]init];
-    
-    self.controllerDelegate = co.controllerDelegate;
     
 }
 
@@ -60,19 +55,25 @@
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-//    switch (indexPath.row) {
-//        case 0:
-//            
-//            break;
-//            
-//        default:
-//            break;
-//    }
+   
 
     if ([self.controllerDelegate respondsToSelector:@selector(viewController:willGotoNextController:withAnimation:)]) {
-        NSLog(@"qqqqqq");
         HLViewControllerX *hv = [[HLViewControllerX alloc]init];
-        [self.controllerDelegate viewController:self willGotoNextController:hv withAnimation:HLAnimationTypeHorTranToLeft];
+        hv.controllerDelegate = self.controllerDelegate;
+        switch (indexPath.row) {
+            case 0:
+                [self.controllerDelegate viewController:self willGotoNextController:hv withAnimation:HLAnimationTypeNone];
+                break;
+            case 1:
+                [self.controllerDelegate viewController:self willGotoNextController:hv withAnimation:HLAnimationTypeHorTranToLeft];
+                break;
+            case 2:
+                [self.controllerDelegate viewController:self willGotoNextController:hv withAnimation:HLAnimationTypeVerTranToUp];
+                break;
+            default:
+                [self.controllerDelegate viewController:self willGotoNextController:hv withAnimation:HLAnimationTypeCrossDissolve];
+                break;
+        }
     }
    
 }
