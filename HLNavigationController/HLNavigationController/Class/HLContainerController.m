@@ -24,10 +24,10 @@
     self.controllerArray = [[NSMutableArray alloc] init];
     self.animationArray = [[NSMutableArray alloc] init];
     
-    HLTableViewController *ta = [[HLTableViewController alloc]init];
-    ta.controllerDelegate = self;
-    [self addChildViewController:ta];
-    [self.view addSubview:ta.view];
+//    HLTableViewController *ta = [[HLTableViewController alloc]init];
+//    ta.controllerDelegate = self;
+//    [self addChildViewController:ta];
+//    [self.view addSubview:ta.view];
 }
 - (UIInterfaceOrientationMask)supportedInterfaceOrientations
 {
@@ -90,19 +90,23 @@
         if (isFinished) {
             [self.controllerArray addObject:nextController];
             [self.animationArray addObject:[NSNumber numberWithInteger:animation]];
+        
+            NSLog(@"%lu",(unsigned long)self.controllerArray.count);
+            NSLog(@"%lu",(unsigned long)self.animationArray.count);
+
         }
     }];
 }
 
 - (void)viewController:(UIViewController *)controller willGoBackWithStep:(NSInteger)stepNo {
-    NSInteger preIndex = [self.controllerArray count] - 1 - stepNo;
+    NSInteger preIndex = [self.controllerArray count] - stepNo;
     if (preIndex < 0) {
         NSLog(@"超出ViewController列表大小");
         return;
     }
     UIViewController *preController = [self.controllerArray objectAtIndex:preIndex];
-    // 这里获取的动画类型是进入当前界面的动画类型，所以要加1，否则得到的是进入要返回的那个界面时所使用的动画类型
-    HLAnimationType preAnimation = [[self.animationArray objectAtIndex:(preIndex + 1)] integerValue];
+
+    HLAnimationType preAnimation = [[self.animationArray objectAtIndex:(preIndex)] integerValue];
     UIViewAnimationOptions options = UIViewAnimationOptionCurveEaseIn;
     void (^animationBlock)(void) = nil;
     CGRect contentFrame = [UIScreen mainScreen].bounds;
