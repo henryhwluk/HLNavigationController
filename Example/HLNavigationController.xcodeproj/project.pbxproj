@@ -25,6 +25,10 @@
 		B88A34091E07A76B00741B0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B88A34071E07A76B00741B0D /* LaunchScreen.storyboard */; };
 		B88A34131E07A9D400741B0D /* HLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B88A34121E07A9D400741B0D /* HLNavigationController.m */; };
 		B88A34191E07ACD100741B0D /* UIViewController+HLNavigationExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B88A34181E07ACD100741B0D /* UIViewController+HLNavigationExtension.m */; };
+		B8AEA0B91E0BC2D00053784F /* UIButton+block.m in Sources */ = {isa = PBXBuildFile; fileRef = B8AEA0B81E0BC2D00053784F /* UIButton+block.m */; };
+		B8AEA0BC1E0BF2C70053784F /* NSObject+CategoryProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = B8AEA0BB1E0BF2C70053784F /* NSObject+CategoryProperty.m */; };
+		B8AEA0BF1E0C00130053784F /* UIViewController+VCCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = B8AEA0BE1E0C00130053784F /* UIViewController+VCCategory.m */; };
+		B8AEA0C51E0C0EB30053784F /* ModelClass.m in Sources */ = {isa = PBXBuildFile; fileRef = B8AEA0C41E0C0EB30053784F /* ModelClass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +63,14 @@
 		B88A34121E07A9D400741B0D /* HLNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLNavigationController.m; sourceTree = "<group>"; };
 		B88A34171E07ACD100741B0D /* UIViewController+HLNavigationExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+HLNavigationExtension.h"; sourceTree = "<group>"; };
 		B88A34181E07ACD100741B0D /* UIViewController+HLNavigationExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HLNavigationExtension.m"; sourceTree = "<group>"; };
+		B8AEA0B71E0BC2D00053784F /* UIButton+block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+block.h"; sourceTree = "<group>"; };
+		B8AEA0B81E0BC2D00053784F /* UIButton+block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+block.m"; sourceTree = "<group>"; };
+		B8AEA0BA1E0BF2C70053784F /* NSObject+CategoryProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+CategoryProperty.h"; sourceTree = "<group>"; };
+		B8AEA0BB1E0BF2C70053784F /* NSObject+CategoryProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CategoryProperty.m"; sourceTree = "<group>"; };
+		B8AEA0BD1E0C00130053784F /* UIViewController+VCCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+VCCategory.h"; sourceTree = "<group>"; };
+		B8AEA0BE1E0C00130053784F /* UIViewController+VCCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+VCCategory.m"; sourceTree = "<group>"; };
+		B8AEA0C31E0C0EB30053784F /* ModelClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelClass.h; sourceTree = "<group>"; };
+		B8AEA0C41E0C0EB30053784F /* ModelClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelClass.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +133,14 @@
 				B88A34071E07A76B00741B0D /* LaunchScreen.storyboard */,
 				B88A340A1E07A76B00741B0D /* Info.plist */,
 				B88A33F91E07A76B00741B0D /* Supporting Files */,
+				B8AEA0B71E0BC2D00053784F /* UIButton+block.h */,
+				B8AEA0B81E0BC2D00053784F /* UIButton+block.m */,
+				B8AEA0BA1E0BF2C70053784F /* NSObject+CategoryProperty.h */,
+				B8AEA0BB1E0BF2C70053784F /* NSObject+CategoryProperty.m */,
+				B8AEA0BD1E0C00130053784F /* UIViewController+VCCategory.h */,
+				B8AEA0BE1E0C00130053784F /* UIViewController+VCCategory.m */,
+				B8AEA0C31E0C0EB30053784F /* ModelClass.h */,
+				B8AEA0C41E0C0EB30053784F /* ModelClass.m */,
 			);
 			path = HLNavigationController;
 			sourceTree = "<group>";
@@ -226,6 +246,7 @@
 				B82966981E080F2500D558AC /* UIColor+RandomColor.m in Sources */,
 				B88A34011E07A76B00741B0D /* ViewController.m in Sources */,
 				B82966931E080C4D00D558AC /* HLViewController.m in Sources */,
+				B8AEA0BF1E0C00130053784F /* UIViewController+VCCategory.m in Sources */,
 				B820F0F11E090A4300593E46 /* HLTableViewController.m in Sources */,
 				B820F0EE1E09027B00593E46 /* HLContainerController.m in Sources */,
 				B829668F1E080C0C00D558AC /* MainViewController.m in Sources */,
@@ -234,6 +255,9 @@
 				B88A33FB1E07A76B00741B0D /* main.m in Sources */,
 				B88A34191E07ACD100741B0D /* UIViewController+HLNavigationExtension.m in Sources */,
 				B88A34131E07A9D400741B0D /* HLNavigationController.m in Sources */,
+				B8AEA0C51E0C0EB30053784F /* ModelClass.m in Sources */,
+				B8AEA0BC1E0BF2C70053784F /* NSObject+CategoryProperty.m in Sources */,
+				B8AEA0B91E0BC2D00053784F /* UIButton+block.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

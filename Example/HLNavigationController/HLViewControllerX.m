@@ -16,9 +16,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    self.title = @"Title";
+    //self.navigationController.navigationBar.barTintColor = [UIColor randomColor];
+    //self.view.backgroundColor = [UIColor randomColor];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Next" style:UIBarButtonItemStylePlain target:self action:@selector(didTapNextButton)];
 }
-
+- (void)didTapNextButton
+{
+    HLViewControllerX *viewController = [[HLViewControllerX alloc] init];
+    viewController.hidesBottomBarWhenPushed = YES;
+    
+    [self.navigationController pushViewController:viewController animated:YES];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

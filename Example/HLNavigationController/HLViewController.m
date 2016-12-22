@@ -10,6 +10,8 @@
 #import "HLNavigationController.h"
 #import "UIViewController+HLNavigationExtension.h"
 #import "UIColor+RandomColor.h"
+#import "HLViewControllerX.h"
+
 @interface HLViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *myTabView;
 
@@ -29,8 +31,9 @@
 
 - (void)didTapNextButton
 {
-    HLViewController *viewController = [[HLViewController alloc] init];
+    HLViewControllerX *viewController = [[HLViewControllerX alloc] init];
     viewController.hidesBottomBarWhenPushed = YES;
+    
     [self.navigationController pushViewController:viewController animated:YES];
 }
 - (void)didReceiveMemoryWarning {
